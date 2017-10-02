@@ -4,7 +4,8 @@
   "description": "fashion-model Oja Action",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava ./test/test.js"
+    "test": "nyc ava ./test/test.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
   "homepage": "https://github.com/fashion-js/fashion-model-action#readme",
   "devDependencies": {
     "ava": "^0.22.0",
+    "codecov": "^2.3.0",
     "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",

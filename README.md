@@ -31,7 +31,6 @@ class PersonSearchAction extends FashionModelAction {
   execute() {
     this.define(Person, {
       name: 'John',
-      eyeColor: 'BLUE',
       height: 100,
       weight: 100
     })
@@ -39,7 +38,7 @@ class PersonSearchAction extends FashionModelAction {
 }
 
 ;(async function () {
-  // { name: 'John', eyeColor: 'BLUE', height: 100, weight: 100 }
+  // { name: 'John', height: 100, weight: 100 }
   const person = await new PersonSearchAction()
     .activate()
     .consume(Person)
