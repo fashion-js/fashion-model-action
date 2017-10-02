@@ -17,7 +17,6 @@ npm install fashion-model-action --save
 
 ```js
 const Model = require('fashion-model/Model')
-const Enum = require('fashion-model/Enum')
 const FashionModelAction = require('fashion-model-action')
 
 const Person = Model.extend({
