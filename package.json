@@ -1,0 +1,47 @@
+{
+  "name": "fashion-model-action",
+  "version": "1.0.0",
+  "description": "fashion-model Oja Action",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fashion-js/fashion-model-action.git"
+  },
+  "keywords": [
+    "fashion-model",
+    "model",
+    "oja",
+    "flow",
+    "pub",
+    "sub",
+    "pub-sub",
+    "event",
+    "eventemitter",
+    "emitter"
+  ],
+  "author": "Austin Kelleher <a@alk.im>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fashion-js/fashion-model-action/issues"
+  },
+  "homepage": "https://github.com/fashion-js/fashion-model-action#readme",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "fashion-model": "^5.0.19",
+    "nyc": "^11.2.1",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.0.0"
+  },
+  "dependencies": {
+    "oja": "^1.0.1"
+  }
+}
