@@ -1,5 +1,8 @@
 # fashion-model-action
 
+[![codecov](https://codecov.io/gh/fashion-js/fashion-model-action/branch/master/graph/badge.svg)](https://codecov.io/gh/fashion-js/fashion-model-action)
+[![Build Status](https://travis-ci.org/fashion-js/fashion-model-action.svg?branch=master)](https://travis-ci.org/fashion-js/fashion-model-action) [![NPM](https://img.shields.io/npm/v/fashion-model-action.svg)](https://www.npmjs.com/package/fashion-model-action)
+
 A [`fashion-model`](https://github.com/fashion-js/fashion-model) wrapper for
 [`oja`](https://github.com/dimichgh/oja) allowing data that is being defined
 and consumed to be a `fashion-model`.
@@ -83,7 +86,7 @@ const person = await new PersonSearchAction()
         * *map* of resolved data mapped to corresponding topics
         * *flow* is an instance of the flow for convenience
     * **returns** promise or a list of promises if callback is not provided;
-        * *promise* for single topic  
+        * *promise* for single topic
         * *promises* mapped to the provided topics
 
 * **consumeStream**(topic | Model [, callback]) returns a readable stream of events for the given topic
