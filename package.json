@@ -4,7 +4,8 @@
   "description": "fashion-model Oja Action",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava ./test/test.js",
+    "lint": "eslint . test/",
+    "test": "npm run lint && nyc ava ./test/test.js",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {

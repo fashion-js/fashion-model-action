@@ -1,3 +1,5 @@
+'use strict'
+
 const FashionModelAction = require('../../')
 const searchForPerson = require('./searchForPerson')
 
